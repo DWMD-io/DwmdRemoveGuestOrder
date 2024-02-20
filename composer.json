@@ -1,0 +1,34 @@
+{
+    "name": "dwmd/remove-guest-order",
+    "description": "DwmdRemoveGuestOrder",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DWMD",
+            "homepage": "https://dwmd.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dwmd\\RemoveGuestOrder\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": ">=6.5.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "Dwmd\\RemoveGuestOrder\\DwmdRemoveGuestOrder",
+        "label": {
+            "de-DE": "DWMD Gastbestellungen entfernen",
+            "en-GB": "DWMD remove guest orders"
+        },
+        "copyright": "(c) by DWMD",
+        "plugin-icon": "src/Resources/config/logo.png",
+        "description": {
+            "de-DE": "Gastbestellungen entfernen",
+            "en-GB": "Remove guest orders"
+        }
+    }
+}
