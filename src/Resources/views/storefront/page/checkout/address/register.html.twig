@@ -1,5 +1,9 @@
 {% sw_extends '@Storefront/storefront/page/checkout/address/register.html.twig' %}
 
 {% block page_checkout_register_personal_guest %}
-    <input name="createCustomerAccount" value="1" type="hidden">
+    {% if config('DwmdRemoveGuestOrder.config.deactivateGuests', context.salesChannel.id) is true %}
+        <input name="createCustomerAccount" value="1" type="hidden">
+    {% else %}
+        {{ parent() }}
+    {% endif %}
 {% endblock %}

@@ -25,7 +25,7 @@
             "en-GB": "DWMD remove guest orders"
         },
         "copyright": "(c) by DWMD",
-        "plugin-icon": "src/Resources/config/logo.png",
+        "plugin-icon": "src/Resources/config/plugin.png",
         "description": {
             "de-DE": "Gastbestellungen entfernen",
             "en-GB": "Remove guest orders"
